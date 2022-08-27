@@ -20,10 +20,13 @@
 //   console.log("hello user");
 // }
 
-let user = "";
+// let user = "";
 
-if (user) {
-  console.log("Hello " + user);
-} else {
-  console.log("I don't who you are!");
-}
+// if (user) {
+//   console.log("Hello " + user);
+// } else {
+//   console.log("I don't who you are!");
+// }
+
+let user = "";
+user ? console.log("Hello " + user) : console.log("I don't who you are");
