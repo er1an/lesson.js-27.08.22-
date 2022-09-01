@@ -55,3 +55,15 @@
 // }
 // erlan("Erlan");
 // erlan("Mirlan");
+
+// function calcSum(num1, num2) {
+//   console.log(num1 + num2);
+// }
+// calcSum(1, 1);
+// calcSum(199, 1);
+
+function calcSum(num1, num2) {
+  let result = num1 + num2;
+  return result;
+}
+console.log(calcSum(10, 10));
