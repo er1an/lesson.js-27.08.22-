@@ -28,5 +28,30 @@
 //   console.log("I don't who you are!");
 // }
 
-let user = "";
-user ? console.log("Hello " + user) : console.log("I don't who you are");
+// let user = "";
+// user ? console.log("Hello " + user) : console.log("I don't who you are");
+
+// function
+// function erlan() {
+//   console.log("Hello World!");
+// }
+// erlan();
+
+// function erlan() {
+//   let user = prompt("What is your name?");
+//   alert("Hello " + user);
+// }
+// erlan();
+// erlan();
+
+// let user = prompt("What is your name?");
+// function erlan(userName) {
+//   alert("Hello " + userName);
+// }
+// erlan(user);
+
+// function erlan(userName) {
+//   alert("Hello " + userName);
+// }
+// erlan("Erlan");
+// erlan("Mirlan");
