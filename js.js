@@ -62,8 +62,23 @@
 // calcSum(1, 1);
 // calcSum(199, 1);
 
+// function calcSum(num1, num2) {
+//   let result = num1 + num2;
+//   return result;
+// }
+// console.log(calcSum(10, 10));
+
+// function calcSum(num1, num2) {
+//   return num1 + num2;
+// }
+// console.log(calcSum(1, 2));
+
 function calcSum(num1, num2) {
-  let result = num1 + num2;
-  return result;
+  if (typeof num1 === "number" && typeof num2 === "number") {
+    return num1 + num2;
+  } else {
+    console.log("Check your args");
+    return "typeof arg1: " + typeof num1 + " typeof arg2: " + typeof num2;
+  }
 }
-console.log(calcSum(10, 10));
+console.log(calcSum(12, 0));
