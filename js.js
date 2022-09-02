@@ -83,12 +83,17 @@
 // }
 // console.log(calcSum(12, 0));
 
-function calcSum(num1, num2) {
-  if (typeof num1 === "number" && typeof num2 === "number") {
-    return num1 + num2;
-  } else {
-    console.error("wrong args types");
-    return "typeof arg1: " + typeof num1 + " typeof arg2: " + typeof num2;
-  }
+// function calcSum(num1, num2) {
+//   if (typeof num1 === "number" && typeof num2 === "number") {
+//     return num1 + num2;
+//   } else {
+//     console.error("wrong args types");
+//     return "typeof arg1: " + typeof num1 + " typeof arg2: " + typeof num2;
+//   }
+// }
+// console.log(calcSum(12, "p"));
+
+function greet(userName) {
+  console.log(`Hello ${userName}`);
 }
-console.log(calcSum(12, "p"));
+greet("erln");
