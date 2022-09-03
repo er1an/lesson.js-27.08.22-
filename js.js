@@ -93,7 +93,53 @@
 // }
 // console.log(calcSum(12, "p"));
 
-function greet(userName) {
-  console.log(`Hello ${userName}`);
-}
-greet("erln");
+// function greet(userName) {
+//   console.log(`Hello ${userName}`);
+// }
+// greet("erln");
+
+// function calcSum(a, b) {
+//   return a + b;
+// }
+// let result = calcSum(1, 2);
+// console.log(result);
+
+// const erlan = function (a, b) {
+//   return a + b;
+// };
+// console.log(erlan(1, 2));
+
+// const greet = (a, b) => {
+//   return a + b;
+// };
+// console.log(greet(79, 79));
+
+// let greet = (a) => {
+//   return a;
+// };
+// console.log(greet(444));
+
+// function erlan() {
+//   let greet = "10";
+//   let num1 = Number(greet);
+//   console.log(typeof num1);
+// }
+// erlan();
+
+// function erlan() {
+//   let num1 = 46;
+//   if (num1 % 2 === 0) {
+//     document.write(true);
+//   } else {
+//     document.write(false);
+//   }
+// }
+// erlan();
+
+// function inArray(text, array) {
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] === text) return true;
+//   }
+//   return false;
+// }
+// console.log(inArray("omg", ["hello", "ggf", "fddfd", "omg"]));
