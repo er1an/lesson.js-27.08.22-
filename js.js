@@ -126,16 +126,6 @@
 // }
 // erlan();
 
-// function erlan() {
-//   let num1 = 46;
-//   if (num1 % 2 === 0) {
-//     document.write(true);
-//   } else {
-//     document.write(false);
-//   }
-// }
-// erlan();
-
 // function inArray(text, array) {
 //   for (let i = 0; i < array.length; i++) {
 //     if (array[i] === text) return true;
@@ -143,3 +133,12 @@
 //   return false;
 // }
 // console.log(inArray("omg", ["hello", "ggf", "fddfd", "omg"]));
+
+// function erlan(num1) {
+//   if (num1 % 2 === 0) {
+//     document.write(true);
+//   } else {
+//     document.write(false);
+//   }
+// }
+// erlan(23);
