@@ -202,8 +202,22 @@
 //   console.log(`salam ${user}`);
 // }
 
-let i = 0;
-do {
-  console.log(i);
-  i++;
-} while (i < 4);
+// let i = 0;
+// do {
+//   console.log(i);
+//   i++;
+// } while (i < 4);
+
+// for (let i = 1; i <= 10; i++) {
+//   if (i % 2 === 2) continue;
+//   console.log(i);
+// }
+
+function peerPotatoes(param) {
+  console.log(`potatoes left ${param}`);
+  param--;
+  if (param > 0) {
+    peerPotatoes(param);
+  }
+}
+peerPotatoes(5);
