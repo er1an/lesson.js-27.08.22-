@@ -187,7 +187,23 @@
 //   }
 // }
 
-let erlan = ["erlann", "mirlan", "asan", "uson"];
-for (let i = 0; i < erlan.length; i++) {
-  console.log(`salam ${erlan[i]}`);
-}
+// let erlan = ["erlann", "mirlan", "asan", "uson"];
+// for (let i = 0; i < erlan.length; i++) {
+//   console.log(`salam ${erlan[i]}`);
+// }
+
+// let erlan = ["erlann", "mirlan", "asan", "uson"];
+// for (user in erlan) {
+//   console.log(`salam ${erlan[user]}`);
+// }
+
+// let erlan = ["erlann", "mirlan", "asan", "uson"];
+// for (user of erlan) {
+//   console.log(`salam ${user}`);
+// }
+
+let i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 4);
