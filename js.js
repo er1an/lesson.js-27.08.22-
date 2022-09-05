@@ -157,9 +157,16 @@
 //   console.log(i);
 // }
 
-let erlan = ["erlann", "mirlan", "asan", "uson"];
-let i = 0;
-while (i < erlan.length) {
-  console.log(`salam ${erlan[i]}`);
-  i++;
-}
+// let erlan = ["erlann", "mirlan", "asan", "uson"];
+// let i = 0;
+// while (i < erlan.length) {
+//   console.log(`salam ${erlan[i]}`);
+//   i++;
+// }
+
+// let erlan = 2;
+// let i = 0;
+// while (i <= 10) {
+//   console.log(`2 * ${i} = ${erlan * i}`);
+//   i++;
+// }
