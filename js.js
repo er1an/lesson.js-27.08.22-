@@ -143,8 +143,23 @@
 // }
 // erlan(23);
 
-let potatoes = 10;
-while (potatoes > 0) {
-  potatoes--;
-  console.log(`Potatoes left: ${potatoes}`);
+//циклы while...
+
+// let potatoes = 10;
+// while (potatoes > 0) {
+//   potatoes--;
+//   console.log(`Potatoes left: ${potatoes}`);
+// }
+
+// let i = 0;
+// while (i < 10) {
+//   i++;
+//   console.log(i);
+// }
+
+let erlan = ["erlann", "mirlan", "asan", "uson"];
+let i = 0;
+while (i < erlan.length) {
+  console.log(`salam ${erlan[i]}`);
+  i++;
 }
