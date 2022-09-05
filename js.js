@@ -142,3 +142,9 @@
 //   }
 // }
 // erlan(23);
+
+let potatoes = 10;
+while (potatoes > 0) {
+  potatoes--;
+  console.log(`Potatoes left: ${potatoes}`);
+}
