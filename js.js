@@ -186,3 +186,8 @@
 //     console.log(`${i} * ${j} = ${i * j}`);
 //   }
 // }
+
+let erlan = ["erlann", "mirlan", "asan", "uson"];
+for (let i = 0; i < erlan.length; i++) {
+  console.log(`salam ${erlan[i]}`);
+}
