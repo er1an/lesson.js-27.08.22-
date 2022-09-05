@@ -170,3 +170,13 @@
 //   console.log(`2 * ${i} = ${erlan * i}`);
 //   i++;
 // }
+
+let i = 2;
+while (i <= 9) {
+  let j = 1;
+  while (j <= 10) {
+    console.log(`${i} * ${j} = ${j * i}`);
+    j++;
+  }
+  i++;
+}
