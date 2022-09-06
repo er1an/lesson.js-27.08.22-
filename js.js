@@ -236,10 +236,25 @@
 // }
 // erlan(50);
 
-let erlan = [2, 5, 3, 9, 15, 0, 4];
+// let erlan = [2, 5, 3, 9, 15, 0, 4];
 
-for (let i = 0; i < erlan.length; i++) {
-  if (erlan[i] > 2 && erlan[i] < 5) {
-    console.log(`${erlan[i]}`);
-  }
+// for (let i = 0; i < erlan.length; i++) {
+//   if (erlan[i] > 2 && erlan[i] < 5) {
+//     console.log(`${erlan[i]}`);
+//   }
+// }
+
+let time = 6;
+switch (time) {
+  case 5:
+    console.log("Good morning");
+    break;
+  case 12:
+    console.log("Good day");
+    break;
+  case 18:
+    console.log("Good evening");
+    break;
+  default:
+    console.log("Good night");
 }
