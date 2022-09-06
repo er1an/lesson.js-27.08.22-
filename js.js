@@ -235,3 +235,11 @@
 //   }
 // }
 // erlan(50);
+
+let erlan = [2, 5, 3, 9, 15, 0, 4];
+
+for (let i = 0; i < erlan.length; i++) {
+  if (erlan[i] > 2 && erlan[i] < 5) {
+    console.log(`${erlan[i]}`);
+  }
+}
