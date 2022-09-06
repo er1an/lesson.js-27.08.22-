@@ -213,11 +213,25 @@
 //   console.log(i);
 // }
 
-function peerPotatoes(param) {
-  console.log(`potatoes left ${param}`);
-  param--;
-  if (param > 0) {
-    peerPotatoes(param);
-  }
-}
-peerPotatoes(5);
+// function peerPotatoes(param) {
+//   console.log(`potatoes left ${param}`);
+//   param--;
+//   if (param > 0) {
+//     peerPotatoes(param);
+//   }
+// }
+// peerPotatoes(5);
+
+// function erlan(num1) {
+//   for (num1 = 0; num1 <= 50; num1++) {
+//     console.log(num1);
+//   }
+// }
+// erlan(50);
+
+// function erlan(num1) {
+//   for (num1 = 50; num1 >= 0; num1--) {
+//     console.log(num1);
+//   }
+// }
+// erlan(50);
