@@ -244,17 +244,17 @@
 //   }
 // }
 
-let time = 6;
-switch (time) {
-  case 5:
-    console.log("Good morning");
-    break;
-  case 12:
-    console.log("Good day");
-    break;
-  case 18:
-    console.log("Good evening");
-    break;
-  default:
-    console.log("Good night");
-}
+// let time = 6;
+// switch (time) {
+//   case 5:
+//     console.log("Good morning");
+//     break;
+//   case 12:
+//     console.log("Good day");
+//     break;
+//   case 18:
+//     console.log("Good evening");
+//     break;
+//   default:
+//     console.log("Good night");
+// }
