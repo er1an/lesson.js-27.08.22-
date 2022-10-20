@@ -276,8 +276,49 @@
 //   alert("hello");
 // });
 
-let btn = document.querySelector(".btn");
-let title = document.querySelector(".title");
-btn.addEventListener("click", function () {
-  title.remove() = "none";
+// let btn = document.querySelector(".btn");
+// let title = document.querySelector(".title");
+// btn.addEventListener("click", function () {
+//   title.remove() = "none";
+// });
+
+// let btn = document.querySelector(".btn");
+// let title = document.querySelector(".title");
+// btn.addEventListener("click", function () {
+//   title.classList.add("active");
+// });
+
+// let box = document.querySelectorAll(".box");
+// box.forEach((item) => {
+//   item.addEventListener("click", () => {
+//     item.classList.add("active");
+//   });
+// });
+
+// let box = document.querySelectorAll(".box");
+// box.forEach((item) => {
+//   item.addEventListener("click", () => {
+//     item.classList.toggle("active");
+//   });
+// });
+
+// let box = document.querySelector(".box");
+// box.addEventListener("click", addClass);
+// function addClass(e) {
+//   console.log(e.target);
+// }
+
+window.addEventListener("load", function () {
+  // let box = document.querySelector(".box");
+  // box.addEventListener("click", addClass);
+
+  // function addClass(e) {
+  //   e.target.parentNode.classList.add("active");
+  // }
+
+  let block = this.document.querySelector(".block");
+
+  block.addEventListener("mousedown", function () {
+    block.style.background = "yellow";
+  });
 });
