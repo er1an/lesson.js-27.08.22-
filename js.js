@@ -258,3 +258,26 @@
 //   default:
 //     console.log("Good night");
 // }
+
+//   ----------------20.10.22 события в JavaScript------------------
+
+// let btn = document.querySelector(".btn");
+// btn.addEventListener("click", function () {
+//   alert("hello");
+// });
+
+// let btn = document.querySelector(".btn");
+// btn.addEventListener("mouseenter", function () {
+//   alert("hello");
+// });
+
+// let btn = document.querySelector(".btn");
+// btn.addEventListener("mouseleave", function () {
+//   alert("hello");
+// });
+
+let btn = document.querySelector(".btn");
+let title = document.querySelector(".title");
+btn.addEventListener("click", function () {
+  title.remove() = "none";
+});
