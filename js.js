@@ -311,14 +311,28 @@
 window.addEventListener("load", function () {
   // let box = document.querySelector(".box");
   // box.addEventListener("click", addClass);
-
   // function addClass(e) {
   //   e.target.parentNode.classList.add("active");
   // }
+  //------===-------
+  // let block = document.querySelector(".block");
+  // block.addEventListener("keydown", function (e) {
+  //   block.style.background = "yellow";
+  // });
+  // document.addEventListener("keypress", function (e) {
+  //   console.log(e);
+  //   if (e.code === "KeyS") {
+  //     console.log("hello");
+  //   }
+  // });
 
-  let block = this.document.querySelector(".block");
+  let input = document.querySelector(".input");
+  let btn = document.querySelector("button");
 
-  block.addEventListener("mousedown", function () {
-    block.style.background = "yellow";
+  btn.addEventListener("click", function () {
+    let userInput = input.value;
+    input.value = "";
+
+    alert(userInput);
   });
 });
