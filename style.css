@@ -2,7 +2,7 @@
   background-color: yellow;
 } */
 
-.box.active {
+/* .box.active {
   background-color: yellow;
 }
 .block {
@@ -10,4 +10,48 @@
   height: 300px;
   border: 1px solid black;
   margin: 0 auto;
+} */
+.wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+.form {
+  border: 1px solid black;
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+  padding-bottom: 26px;
+}
+label,
+input {
+  width: 400px;
+  margin: 0 auto;
+  height: 40px;
+}
+button {
+  height: 40px;
+  width: 408px;
+  margin: 0 auto;
+}
+h2,
+label {
+  text-align: center;
+  font-size: 24px;
+}
+.todo-list {
+  width: 458px;
+  border: 1px solid black;
+  height: 40px auto;
+  padding: 20px;
+  display: grid;
+  gap: 16px;
+}
+.todo-item {
+  width: 300px;
+  margin: 0 auto;
+  height: 35px;
+  border: 1px solid black;
+  padding: 12px;
+  display: flex;
+  align-items: center;
 }

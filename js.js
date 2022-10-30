@@ -325,14 +325,26 @@ window.addEventListener("load", function () {
   //     console.log("hello");
   //   }
   // });
+  //   let input = document.querySelector(".input");
+  //   let btn = document.querySelector("button");
+  //   btn.addEventListener("click", function () {
+  //     let userInput = input.value;
+  //     // input.value = "";
+  //     console.log(userInput);
+  //   });
+  let form = document.querySelector("#add-todo-form");
+  let todoList = document.querySelector("#todo-output");
+  let todoInput = document.querySelector("#input-todo");
 
-  let input = document.querySelector(".input");
-  let btn = document.querySelector("button");
-
-  btn.addEventListener("click", function () {
-    let userInput = input.value;
-    input.value = "";
-
-    alert(userInput);
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let todoItem = document.createElement("div");
+    todoItem.innerText = todoInput.value;
+    todoItem.classList.add("todo-item");
+    todoList.appendChild(todoItem);
+    todoInput.value = "";
+    todoItem.addEventListener("click", function () {
+      todoItem.remove();
+    });
   });
 });
