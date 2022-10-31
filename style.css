@@ -11,7 +11,7 @@
   border: 1px solid black;
   margin: 0 auto;
 } */
-.wrapper {
+/* .wrapper {
   width: 500px;
   margin: 0 auto;
 }
@@ -54,4 +54,23 @@ label {
   padding: 12px;
   display: flex;
   align-items: center;
+} */
+
+/* ===---=== */
+.container {
+  border: 3px solid yellow;
+  padding: 3em;
+}
+ul {
+  width: 20vw;
+  margin: 0 auto;
+  padding: 0;
+  border: 3px solid red;
+  list-style: none;
+}
+li {
+  margin: 1.5em;
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px 0;
 }

@@ -332,19 +332,86 @@ window.addEventListener("load", function () {
   //     // input.value = "";
   //     console.log(userInput);
   //   });
-  let form = document.querySelector("#add-todo-form");
-  let todoList = document.querySelector("#todo-output");
-  let todoInput = document.querySelector("#input-todo");
+  //--------==--------------
+  //   let form = document.querySelector("#add-todo-form");
+  //   let todoList = document.querySelector("#todo-output");
+  //   let todoInput = document.querySelector("#input-todo");
+  //   form.addEventListener("submit", (e) => {
+  //     e.preventDefault();
+  //     let todoItem = document.createElement("div");
+  //     todoItem.innerText = todoInput.value;
+  //     todoItem.classList.add("todo-item");
+  //     todoList.appendChild(todoItem);
+  //     todoInput.value = "";
+  //     todoItem.addEventListener("click", function () {
+  //       todoItem.remove();
+  //     });
+  //   });
+  //===-----====
+  //   let container = document.querySelector(".container");
+  //   let ul = document.querySelector("ul");
+  //   let li = document.querySelector("li");
+  //   li.addEventListener("click", () => {
+  //     console.log("li");
+  //   });
+  //   ul.addEventListener(
+  //     "click",
+  //     () => {
+  //       console.log("ul");
+  //     },
+  //     true
+  //   );
+  //   container.addEventListener(
+  //     "click",
+  //     (e) => {
+  //       e.stopPropagation();
+  //       console.log("container");
+  //     },
+  //     true
+  //   );
+  //==----====
+  // let container = document.querySelector(".container");
+  // container.addEventListener("click", (e) => {
+  //   console.log(e.target.textContent);
+  // });
+  const form = document.querySelector("#task-form");
+  const taskList = document.querySelector(".collection");
+  const clrBtn = document.querySelector(".clear-tasks");
+  const filter = document.querySelector("#filter");
+  const taskInput = document.querySelector("#task");
 
-  form.addEventListener("submit", (e) => {
+  loadEventListeners();
+
+  function loadEventListeners() {
+    form.addEventListener("submit", addTask);
+    taskList.addEventListener("click", removeTask);
+    clrBtn.addEventListener("click", clearTasks);
+  }
+  function clearTasks() {
+    taskList.innerHTML = "";
+  }
+  function removeTask(e) {
+    if (e.target.parentElement.classList.contains("delete-item")) {
+      if (confirm("Are you sure??")) {
+        e.target.parentElement.parentElement.remove();
+      }
+    }
+  }
+  function addTask(e) {
+    if (taskInput.value === "") {
+      alert("Add task!");
+    }
+    const li = document.createElement("li");
+    li.className = "collection-item";
+    li.appendChild(document.createTextNode(taskInput.value));
+
+    const link = document.createElement("a");
+    link.className = "delete-item secondary-content";
+    link.innerHTML = "<i class = 'fa fa-remove'></i>";
+
+    li.appendChild(link);
+    taskList.appendChild(li);
+    taskInput.value = "";
     e.preventDefault();
-    let todoItem = document.createElement("div");
-    todoItem.innerText = todoInput.value;
-    todoItem.classList.add("todo-item");
-    todoList.appendChild(todoItem);
-    todoInput.value = "";
-    todoItem.addEventListener("click", function () {
-      todoItem.remove();
-    });
-  });
+  }
 });
