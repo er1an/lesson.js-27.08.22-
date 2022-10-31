@@ -386,7 +386,20 @@ window.addEventListener("load", function () {
     form.addEventListener("submit", addTask);
     taskList.addEventListener("click", removeTask);
     clrBtn.addEventListener("click", clearTasks);
+    filter.addEventListener("keyup", filterTasks);
   }
+  function filterTasks(e) {
+    const text = e.target.value.toLowerCase();
+    document.querySelectorAll(".collection-item").forEach((task) => {
+      const item = task.firstChild.textContent;
+      if (item.toLocaleLowerCase().indexOf(text) != -1) {
+        task.style.display = "block";
+      } else {
+        task.style.display = "none";
+      }
+    });
+  }
+
   function clearTasks() {
     taskList.innerHTML = "";
   }
