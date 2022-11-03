@@ -1,4 +1,4 @@
-// let yourNumber = prompt("Введите число");
+//i; let yourNumber = prompt("Введите число");
 // yourNumber--;
 // document.write(yourNumber);
 
@@ -370,10 +370,13 @@ window.addEventListener("load", function () {
   //     true
   //   );
   //==----====
+  //03.11.22------++++++++
   // let container = document.querySelector(".container");
   // container.addEventListener("click", (e) => {
   //   console.log(e.target.textContent);
   // });
+
+  //====----====
   const form = document.querySelector("#task-form");
   const taskList = document.querySelector(".collection");
   const clrBtn = document.querySelector(".clear-tasks");
@@ -383,10 +386,30 @@ window.addEventListener("load", function () {
   loadEventListeners();
 
   function loadEventListeners() {
+    document.addEventListener("DOMContentLoaded", gettasks);
     form.addEventListener("submit", addTask);
     taskList.addEventListener("click", removeTask);
     clrBtn.addEventListener("click", clearTasks);
     filter.addEventListener("keyup", filterTasks);
+  }
+  function gettasks() {
+    let tasks;
+    if (localStorage.getItem("tasks") === null) {
+      tasks = [];
+    } else {
+      tasks = JSON.parse(localStorage.getItem("tasks"));
+    }
+    tasks.forEach((task) => {
+      const li = document.createElement("li");
+      li.className = "collection-item";
+      li.appendChild(document.createTextNode(task));
+
+      const link = document.createElement("a");
+      link.className = "delete-item secondary-content";
+      link.innerHTML = '<i class="fa fa-remove"></i>';
+      li.appendChild(link);
+      taskList.appendChild(li);
+    });
   }
   function filterTasks(e) {
     const text = e.target.value.toLowerCase();
@@ -424,7 +447,31 @@ window.addEventListener("load", function () {
 
     li.appendChild(link);
     taskList.appendChild(li);
+
+    storeTaskInLocalStorage(taskInput.value);
     taskInput.value = "";
     e.preventDefault();
   }
+  function storeTaskInLocalStorage(task) {
+    let tasks;
+    if (localStorage.getItem("tasks") === null) {
+      tasks = [];
+    } else {
+      tasks = JSON.parse(localStorage.getItem("tasks"));
+    }
+    tasks.push(task);
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }
+
+  // const num1 = 25;
+  // console.log(localStorage.getItem("num1"));
+  //localStorage.setItem("num1vvv", num1);
+  //localStorage.removeItem("num1");
+  //localStorage.clear();
+
+  // const user = {
+  //   name: "John",
+  //   age: 30,
+  // };
+  // localStorage.setItem("user", JSON.stringify(user));
 });
