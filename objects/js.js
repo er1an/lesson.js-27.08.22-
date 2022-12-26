@@ -21,27 +21,30 @@
 // console.log(mary.calculateAge());
 
 //========
-function Auto(model, year, color, fuelLeft) {
-  this.model = model;
-  this.year = year;
-  this.color = color;
-  this.fuelLeft = fuelLeft;
-}
-Auto.prototype.showInfo = function () {
-  console.log(
-    `Model: ${this.model}, Year: ${this.year}, Color: ${this.color},
-        Fuel left: ${this.fuelLeft}`
-  );
-};
-Auto.prototype.drive = function (distance) {
-  if (this.fuelLeft > 0) {
-    this.fuelLeft -= 10;
-  } else {
-    console.log("No fuel left");
-  }
-};
-const bmw = new Auto("BMW", "2020", "red", 10);
-bmw.showInfo();
-bmw.drive();
-bmw.showInfo();
-bmw.drive();
+// function Auto(model, year, color, fuelLeft) {
+//   this.model = model;
+//   this.year = year;
+//   this.color = color;
+//   this.fuelLeft = fuelLeft;
+// }
+// Auto.prototype.showInfo = function () {
+//   console.log(
+//     `Model: ${this.model}, Year: ${this.year}, Color: ${this.color},
+//         Fuel left: ${this.fuelLeft}`
+//   );
+// };
+// Auto.prototype.drive = function (distance) {
+//   if (this.fuelLeft > 0) {
+//     this.fuelLeft -= 10;
+//   } else {
+//     console.log("No fuel left");
+//   }
+// };
+// const bmw = new Auto("BMW", "2020", "red", 10);
+// bmw.showInfo();
+// bmw.drive();
+// bmw.showInfo();
+// bmw.drive();
+
+const erlan = new String("ggdfgdgdgfd");
+console.log(erlan);
